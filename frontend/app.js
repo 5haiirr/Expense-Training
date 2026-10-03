@@ -1,6 +1,4 @@
-// ==========================
 // GET ELEMENTS FROM HTML
-// ==========================
 
 const expensesTable =
     document.getElementById("expensesTable");
@@ -81,16 +79,13 @@ const editMessage =
     document.getElementById("editMessage");
 
 
-// ==========================
 // DATA
-// ==========================
 
 let allExpenses = [];
 
 
-// ==========================
 // SHOW MESSAGE
-// ==========================
+
 
 function showMessage(messageText, type) {
 
@@ -103,9 +98,7 @@ function showMessage(messageText, type) {
 }
 
 
-// ==========================
 // SHOW FORM MESSAGE
-// ==========================
 
 function showFormMessage(messageText, type) {
 
@@ -118,9 +111,9 @@ function showFormMessage(messageText, type) {
 }
 
 
-// ==========================
+
 // LOAD EXPENSES
-// ==========================
+
 
 async function loadExpenses() {
 
@@ -173,9 +166,7 @@ async function loadExpenses() {
 }
 
 
-// ==========================
 // UPDATE SUMMARY
-// ==========================
 
 function updateSummary() {
 
@@ -216,9 +207,7 @@ function updateSummary() {
 }
 
 
-// ==========================
 // DISPLAY EXPENSES
-// ==========================
 
 function displayExpenses(expenses) {
 
@@ -335,9 +324,8 @@ function displayExpenses(expenses) {
 }
 
 
-// ==========================
 // FILTER
-// ==========================
+
 
 function filterExpenses() {
 
@@ -367,9 +355,8 @@ function filterExpenses() {
 }
 
 
-// ==========================
 // FILTER EVENT
-// ==========================
+
 
 categoryFilter.addEventListener(
     "change",
@@ -377,9 +364,8 @@ categoryFilter.addEventListener(
 );
 
 
-// ==========================
 // ADD EXPENSE
-// ==========================
+
 
 expenseForm.addEventListener(
     "submit",
@@ -516,9 +502,8 @@ expenseForm.addEventListener(
 );
 
 
-// ==========================
 // DELETE EXPENSE
-// ==========================
+
 
 async function deleteExpense(id) {
 
@@ -582,9 +567,8 @@ async function deleteExpense(id) {
 }
 
 
-// ==========================
 // OPEN EDIT MODAL
-// ==========================
+
 
 function openEditModal(id) {
 
@@ -630,9 +614,8 @@ function openEditModal(id) {
 }
 
 
-// ==========================
 // UPDATE EXPENSE
-// ==========================
+
 
 editForm.addEventListener(
     "submit",
@@ -777,8 +760,8 @@ editForm.addEventListener(
 );
 
 
-// ==========================
+
 // INITIAL LOAD
-// ==========================
+
 
 loadExpenses();
